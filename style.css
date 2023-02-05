@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  color: #000;
+  background-color: #f1f3f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+li {
+  font-weight: 450;
+  margin-bottom: 0.3rem;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Header Section */
+
+.header nav {
+  padding-top: 4.5rem;
+  width: 100vw;
+  z-index: 1;
+}
+
+.header nav span {
+  font-size: 3rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 9.6rem;
+}
+
+.welcome-text-box h1 {
+  padding-top: 3.2rem;
+  text-align: center;
+  font-size: 5.2rem;
+}
+
+.button-box {
+  display: flex;
+  gap: 9.6rem;
+  font-size: 4.4rem;
+}
+
+.hero-btn:link,
+.hero-btn:visited {
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #868e96;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  outline: thick solid #adb5bd;
+}
+
+.educational-stats span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.75px;
+}
+
+.educational-stats-box {
+  background-color: #fff;
+  column-gap: 3.6rem;
+  align-items: center;
+  border-radius: 1.5rem;
+}
+
+.stat {
+  margin: 4.8rem 0;
+  font-size: 2.4rem;
+}
+
+.stat:first-child {
+  margin-left: 3.6rem;
+}
+
+/* ABOUT ME SECTION */
+.section-about-me {
+  padding: 9.6rem 0;
+}
+
+.about-me-box {
+  column-gap: 3.6rem;
+}
+
+.fact-box h3 {
+  font-size: 3rem;
+  color: #495057;
+}
+
+.fact-box ul {
+  list-style: none;
+  padding-left: 4rem;
+}
+
+.fact-box li {
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/*---------- PROJECTS SECTION ----------*/
+.section-projects {
+  padding: 9.6rem 0;
+}
+
+.coursecorrectproject,
+.piggameproject,
+.guessmynumberproject {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 3.6rem;
+  margin-top: 4.5rem;
+}
+
+.piggameproject {
+  grid-template-columns: 1fr 1.5fr;
+  margin-top: 6.4rem;
+}
+
+.guessmynumberproject {
+  margin-top: 6.4rem;
+}
+
+.project-image-box {
+  background-color: #f8f9fa;
+  border-radius: 2rem;
+}
+
+.project-img {
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 10px solid #e6e9ec;
+  width: 100%;
+  box-shadow: 6px 6px 24px 1px rgb(0 0 0 / 20%);
+}
+
+.project-description-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+/*---------- QUOTES SECTION ----------*/
+.section-quote {
+  padding: 20rem 20rem 20rem 20rem;
+}
+
+.quote-box {
+  text-align: center;
+}
+
+.quote-box h2 {
+  color: #1971c2;
+}
+
+.quote-box p {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+}
+
+/*---------- CONTACT SECTION ----------*/
+.section-contact {
+  padding: 10rem 20rem 20rem 20rem;
+}
+
+.contact-box {
+  text-align: center;
+}
+
+.contact-box p {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
